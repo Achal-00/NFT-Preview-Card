@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    width: 250px;
+    height: 480px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+.image .main {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    background-image: url("images/image-equilibrium.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.content {
+    font-size: 15px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.value {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    color: hsl(178, 100%, 50%);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.time {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    justify-items: end;
+    font-weight: 300;
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
+}
+
+.details img {
+    padding-top: 8px;
+}
+
+.line {
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+    margin-top: 10px;
+}
+
+.imageHolder {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.imageHolder img {
+    width: 100%;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    font-size: 12px;
+    color: hsl(215, 51%, 70%);
+}
+
+.footer span {
+    color: hsl(0, 0%, 100%);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-content: center;
+
+}
+
+.header:hover,
+.footer span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.main:hover .overlay {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/icon-view.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.5;
+}
